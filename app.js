@@ -24,7 +24,7 @@ function verificarChute() {
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let menssagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}.`;
         exibirTextoNatela('p', menssagemTentativas);
-        //pare pegar o id (que é unico no codigo html)
+        //para pegar o id (que é unico no codigo html)
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if (chute > numeroSecreto) {
